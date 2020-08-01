@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Κηποπράξις - Ιστοσελίδα</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Archi is best selling interior design website template with responsive stunning design">
-    <meta name="keywords" content="architecture,building,business,bootstrap,creative,exterior design,furniture design,gallery,garden design,house,interior design,landscape design,multipurpose,onepage,portfolio,studio">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <meta name="author" content="">
 
 
@@ -14,34 +14,34 @@
     <![endif]-->
     <!-- CSS Files
     ================================================== -->
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/jpreloader.css" type="text/css">
-    <link rel="stylesheet" href="css/animate.css" type="text/css">
-    <link rel="stylesheet" href="css/plugin.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.theme.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.transitions.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="~/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="~/css/jpreloader.css" type="text/css">
+    <link rel="stylesheet" href="~/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="~/css/plugin.css" type="text/css">
+    <link rel="stylesheet" href="~/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="~/css/owl.theme.css" type="text/css">
+    <link rel="stylesheet" href="~/css/owl.transitions.css" type="text/css">
+    <link rel="stylesheet" href="~/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="~/css/style.css" type="text/css">
 
     <!-- custom background -->
-    <link rel="stylesheet" href="css/bg.css" type="text/css">
+    <link rel="stylesheet" href="~/css/bg.css" type="text/css">
 
     <!-- color scheme -->
-    <link rel="stylesheet" href="css/colors/lime.css" type="text/css" id="colors">
-    <link rel="stylesheet" href="css/color.css" type="text/css">
+    <link rel="stylesheet" href="~/css/colors/lime.css" type="text/css" id="colors">
+    <link rel="stylesheet" href="~/css/color.css" type="text/css">
 
     <!-- load fonts -->
-    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css" type="text/css">
-    <link rel="stylesheet" href="fonts/elegant_font/HTML_CSS/style.css" type="text/css">
-    <link rel="stylesheet" href="fonts/et-line-font/style.css" type="text/css">
+    <link rel="stylesheet" href="~/fonts/font-awesome/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="~/fonts/elegant_font/HTML_CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="~/fonts/et-line-font/style.css" type="text/css">
 
     <!-- revolution slider -->
-    <link rel="stylesheet" href="rs-plugin/css/settings.css" type="text/css">
-    <link rel="stylesheet" href="css/rev-settings.css" type="text/css">
+    <link rel="stylesheet" href="~/rs-plugin/css/settings.css" type="text/css">
+    <link rel="stylesheet" href="~/css/rev-settings.css" type="text/css">
 
     <!-- custom css -->
-    <link rel="stylesheet" href="css/custom.css" type="text/css">
+    <link rel="stylesheet" href="~/css/custom.css" type="text/css">
 </head>
 
 <body id="homepage">
@@ -73,7 +73,7 @@
                         <!-- logo begin -->
                         <div id="logo">
                             <a asp-controller="Home" asp-action="Index">
-                                <img class="logo" src="images/logo.png" alt="">
+                                <img class="logo" src="~/images/logo.png" alt="">
                             </a>
                         </div>
                         <!-- logo close -->
@@ -83,20 +83,12 @@
                         <!-- mainmenu begin -->
                         <nav>
                             <ul id="mainmenu">
-                                <li><a  asp-controller="Home" asp-action="Index">Αρχική</a></li>
-                                <li><a href="about.html">Η Εταιρια μας</a></li>
-                                <li>
-                                    <a href="services.html">Υπηρεσιες</a>
-                                    <ul>
-                                        <li><a href="services.html">Ολες οι υπηρεσίες</a></li>
-                                        <li><a href="service-single-1.html">Υπηρεσια 1</a></li>
-                                        <li><a href="service-single-2.html">Υπηρεσια 2</a></li>
-                                        <li><a href="service-single-3.html">Υπηρεσια 3</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="projects.html">Εργα</a></li>
-                                <li><a href="news.html">Νεα</a></li>
-                                <li><a href="contact.html">Επικοινωνια</a></li>
+                                <li><a asp-controller="Home" asp-action="Index">Αρχικη</a></li>
+                                <li><a asp-controller="Home" asp-action="About">Η Εταιρεια μας</a></li>
+                                <li><a asp-controller="Home" asp-action="Services">Υπηρεσιες</a></li>
+                                <li><a asp-controller="Home" asp-action="Projects">Εργα</a></li>
+                                <li><a asp-controller="Home" asp-action="News">Νεα</a></li>
+                                <li><a asp-controller="Home" asp-action="Contact">Επικοινωνια</a></li>
                             </ul>
                         </nav>
 
@@ -113,7 +105,7 @@
             <div class="container pb40">
                 <div class="row">
                     <div class="col-md-3">
-                        <img src="images/logo-2.png" class="logo-small" alt=""><br>
+                        <img src="~/images/logo-2.png" class="logo-small" alt=""><br>
                     </div>
 
                     <div class="col-md-6">
@@ -141,29 +133,31 @@
 
     <!-- Javascript Files
     ================================================== -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jpreLoader.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/easing.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/jquery.scrollto.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/jquery.countTo.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/video.resize.js"></script>
-    <script src="js/validation.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/enquire.min.js"></script>
-    <script src="js/designesia.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jpreLoader.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.isotope.min.js"></script>
+    <script src="~/js/easing.js"></script>
+    <script src="~/js/jquery.flexslider-min.js"></script>
+    <script src="~/js/jquery.scrollto.js"></script>
+    <script src="~/js/owl.carousel.js"></script>
+    <script src="~/js/jquery.countTo.js"></script>
+    <script src="~/js/classie.js"></script>
+    <script src="~/js/video.resize.js"></script>
+    <script src="~/js/validation.js"></script>
+    <script src="~/js/wow.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/jquery.stellar.min.js"></script>
+    <script src="~/js/enquire.min.js"></script>
+    <script src="~/js/designesia.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ_aEnH_SDIRQHCFOGPX4xwjPw7VaDLXk"></script>
+    <script src="~/js/map-4.js"></script>
 
     <!-- SLIDER REVOLUTION SCRIPTS  -->
-    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="~/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="~/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
-    <script src="js/typed.js"></script>
+    <script src="~/js/typed.js"></script>
     <script>
         $(function () {
             // jquery typed plugin

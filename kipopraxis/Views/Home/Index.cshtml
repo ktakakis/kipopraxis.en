@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div id="content" class="no-bottom no-top">
@@ -156,7 +157,7 @@
                                     <i class="icon_headphones"></i>
                                     <div class="info-box_text">
                                         <div class="info-box_title">Εξυπηρετηση πελατων</div>
-                                        <div class="info-box_subtite">+210 57 75 176</div>
+                                        <div class="info-box_subtite">+30 210 57 75 176</div>
                                     </div>
                                 </div>
                             </div>
@@ -392,7 +393,7 @@
                 </div>
 
                 <div class="col-md-4 text-right">
-                    <a href="contact.html" class="btn btn-line btn-big">Κάντε Αιτημα</a>
+                    <a asp-controller="Home" asp-action="Contact" class="btn btn-line btn-big">Καντε Αιτημα</a>
                 </div>
             </div>
         </div>
