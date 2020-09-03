@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\js\email.php" />
     <None Include="wwwroot\images\logo.psd" />
     <None Include="wwwroot\js\site.js" />
   </ItemGroup>
