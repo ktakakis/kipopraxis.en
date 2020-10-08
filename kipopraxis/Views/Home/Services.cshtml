@@ -1,20 +1,20 @@
 ﻿@{
-    ViewData["Title"] = "Οι Υπηρεσίες μας";
+    ViewData["Title"] = "Our services";
 }
 
 <!-- subheader -->
-<section id="subheader" data-bgimage="url(../../images/background/subheader-2.jpg" class="style-2" data-stellar-background-ratio=".1">
+<section id="subheader" data-bgimage="url(../../images/background/subheader2.jpg" class="style-2" data-stellar-background-ratio=".1">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="title-wrap">
-                    <h1>Οι Υπηρεσίες μας</h1>
-                    <h4>Οι πιο αξιόπιστες υπηρεσίες κήπου</h4>
+                    <h1>Our services</h1>
+                    <h4>The most reliable garden services</h4>
                 </div>
                 <ul class="crumb">
-                    <li><a asp-controller="Home" asp-action="Index">Αρχική</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
                     <li class="sep">/</li>
-                    <li>Υπηρεσίες</li>
+                    <li>Services</li>
                 </ul>
             </div>
         </div>
@@ -28,39 +28,6 @@
             <div class="col-md-12">
                 <div class="bg-color">
 
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="info-box padding20">
-                                <i class="icon_clock_alt"></i>
-                                <div class="info-box_text">
-                                    <div class="info-box_title">Ωρες λειτουργιας</div>
-                                    <div class="info-box_subtite">Δευτέρα - Παρασκευή: 09:00 - 18:00</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="info-box padding20">
-                                <i class="icon_house_alt"></i>
-                                <div class="info-box_text">
-                                    <div class="info-box_title">Η τοποθεσια μας</div>
-                                    <div class="info-box_subtite">Αγ. Παύλου 31, 121 32 - Περιστέρι</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="info-box padding20">
-                                <i class="icon_headphones"></i>
-                                <div class="info-box_text">
-                                    <div class="info-box_title">Εξυπηρετηση πελατων</div>
-                                    <div class="info-box_subtite">+30 210 57 75 176</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="clearfix"></div>
-                    </div>
                 </div>
 
             </div>
@@ -75,217 +42,244 @@
 
                 <div class="col-md-3">
                     <div class="picframe img-rounded">
-                        <a href="service-single-1.html">
+                        <a asp-controller="Home" asp-action="Service1">
                             <span class="overlay">
                                 <span class="pf_text">
                                     <span class="project-name">Our Project #1</span>
                                 </span>
                             </span>
-                            <img src="~/images/services/p1_a.jpg" class="img-responsive img-rounded" alt="">
+                            <img src="~/images/services/EarthWorks.jpg" class="img-responsive img-rounded" alt="">
                         </a>
                     </div>
                     <div class="spacer-single"></div>
-                    <h3>Κατασκευή &amp συντήρηση έργων πρασίνου.</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <h3>Earthworks.</h3>
                 </div>
 
                 <div class="col-md-3">
                     <div class="picframe img-rounded">
-                        <a href="service-single-2.html">
+                        <a asp-controller="Home" asp-action="Service2">
                             <span class="overlay">
                                 <span class="pf_text">
                                     <span class="project-name">Our Project #1</span>
                                 </span>
                             </span>
-                            <img src="~/images/services/p2_a.jpg" class="img-responsive img-rounded" alt="">
+                            <img src="~/images/services/AutoIrrigation.jpg" class="img-responsive img-rounded" alt="">
                         </a>
                     </div>
                     <div class="spacer-single"></div>
-                    <h3>Κατασκευή &amp συντήρηση φυσικού χλοοτάπητα.</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <h3>Automated irrigation networks construction.</h3>
                 </div>
 
                 <div class="col-md-3">
                     <div class="picframe img-rounded">
-                        <a href="service-single-3.html">
+                        <a asp-controller="Home" asp-action="Service3">
                             <span class="overlay">
                                 <span class="pf_text">
                                     <span class="project-name">Our Project #1</span>
                                 </span>
                             </span>
-                            <img src="~/images/services/p3_a.jpg" class="img-responsive img-rounded" alt="">
+                            <img src="~/images/services/GreenRoofs.jpg" class="img-responsive img-rounded" alt="">
                         </a>
                     </div>
                     <div class="spacer-single"></div>
-                    <h3>Κατασκευή χώρων αναψυχής – παιδικών χαρών</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <h3>Green roofs.</h3>
                 </div>
 
                 <div class="col-md-3">
                     <div class="picframe img-rounded">
-                        <a href="service-single-1.html">
+                        <a asp-controller="Home" asp-action="Service4">
                             <span class="overlay">
                                 <span class="pf_text">
                                     <span class="project-name">Our Project #1</span>
                                 </span>
                             </span>
-                            <img src="~/images/services/p4_a.jpg" class="img-responsive img-rounded" alt="">
+                            <img src="~/images/services/GardenLighting.jpg" class="img-responsive img-rounded" alt="">
                         </a>
                     </div>
                     <div class="spacer-single"></div>
-                    <h3>Κατασκευή &amp συντήρηση αυτοματοματοποιημένων δικτύων άρδευσης.</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <h3>Garden lighting.</h3>
                 </div>
             </div>
             <div class="row">
 
                 <div class="col-md-3">
                     <div class="picframe img-rounded">
-                        <a href="service-single-1.html">
+                        <a asp-controller="Home" asp-action="Service5">
                             <span class="overlay">
                                 <span class="pf_text">
                                     <span class="project-name">Our Project #1</span>
                                 </span>
                             </span>
-                            <img src="~/images/services/p5_a.jpg" class="img-responsive img-rounded" alt="">
+                            <img src="~/images/services/CeramicFloors.jpg" class="img-responsive img-rounded" alt="">
                         </a>
                     </div>
                     <div class="spacer-single"></div>
-                    <h3>Αναπλάσεις υποβαθμισμένου περιβάλλοντος.</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <h3>Ceramic floors.</h3>
                 </div>
 
                 <div class="col-md-3">
                     <div class="picframe img-rounded">
-                        <a href="service-single-2.html">
+                        <a asp-controller="Home" asp-action="Service6">
                             <span class="overlay">
                                 <span class="pf_text">
                                     <span class="project-name">Our Project #1</span>
                                 </span>
                             </span>
-                            <img src="~/images/services/p6_a.jpg" class="img-responsive img-rounded" alt="">
+                            <img src="~/images/services/StabilizedFloors.jpg" class="img-responsive img-rounded" alt="">
                         </a>
                     </div>
                     <div class="spacer-single"></div>
-                    <h3>Κατασκευή συστημάτων φιλτραρίσματος νερού.</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <h3>Stabilized ceramic floors construction.</h3>
                 </div>
 
                 <div class="col-md-3">
                     <div class="picframe img-rounded">
-                        <a href="service-single-3.html">
+                        <a asp-controller="Home" asp-action="Service7">
                             <span class="overlay">
                                 <span class="pf_text">
                                     <span class="project-name">Our Project #1</span>
                                 </span>
                             </span>
-                            <img src="~/images/services/p7_a.jpg" class="img-responsive img-rounded" alt="">
+                            <img src="~/images/services/ShrubsAndTrees.jpg" class="img-responsive img-rounded" alt="">
                         </a>
                     </div>
                     <div class="spacer-single"></div>
-                    <h3>Κατασκευή &amp συντήρηση αντλιοστασίων.</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <h3>Shrubs and trees planting works.</h3>
                 </div>
 
                 <div class="col-md-3">
                     <div class="picframe img-rounded">
-                        <a href="service-single-1.html">
+                        <a asp-controller="Home" asp-action="Service8">
                             <span class="overlay">
                                 <span class="pf_text">
                                     <span class="project-name">Our Project #1</span>
                                 </span>
                             </span>
-                            <img src="~/images/services/p8_a.jpg" class="img-responsive img-rounded" alt="">
+                            <img src="~/images/services/SportsField.jpg" class="img-responsive img-rounded" alt="">
                         </a>
                     </div>
                     <div class="spacer-single"></div>
-                    <h3>Εργασίες κλαδέματος υψηλών δένδρων &amp θρυμματισμός κλαδιών</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <h3>Sports fields construction.</h3>
                 </div>
             </div>
             <div class="row">
 
                 <div class="col-md-3">
                     <div class="picframe img-rounded">
-                        <a href="service-single-1.html">
+                        <a asp-controller="Home" asp-action="Service9">
                             <span class="overlay">
                                 <span class="pf_text">
                                     <span class="project-name">Our Project #1</span>
                                 </span>
                             </span>
-                            <img src="~/images/services/p9_a.jpg" class="img-responsive img-rounded" alt="">
+                            <img src="~/images/services/VerticalGardens.jpg" class="img-responsive img-rounded" alt="">
                         </a>
                     </div>
                     <div class="spacer-single"></div>
-                    <h3>Κομποστοποίηση.</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <h3>Vertical gardens.</h3>
                 </div>
 
                 <div class="col-md-3">
                     <div class="picframe img-rounded">
-                        <a href="service-single-2.html">
+                        <a asp-controller="Home" asp-action="Service10">
                             <span class="overlay">
                                 <span class="pf_text">
                                     <span class="project-name">Our Project #1</span>
                                 </span>
                             </span>
-                            <img src="~/images/services/p10_a.jpg" class="img-responsive img-rounded" alt="">
+                            <img src="~/images/services/IrrigationMaintenance.JPG" class="img-responsive img-rounded" alt="">
                         </a>
                     </div>
                     <div class="spacer-single"></div>
-                    <h3>Απομάκρυνση Αμιάντου.</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <h3>Automated irrigation networks maintenance.</h3>
                 </div>
 
                 <div class="col-md-3">
                     <div class="picframe img-rounded">
-                        <a href="service-single-3.html">
+                        <a asp-controller="Home" asp-action="Service11">
                             <span class="overlay">
                                 <span class="pf_text">
                                     <span class="project-name">Our Project #1</span>
                                 </span>
                             </span>
-                            <img src="~/images/services/p11_a.jpg" class="img-responsive img-rounded" alt="">
+                            <img src="~/images/services/ReformationAreas.jpg" class="img-responsive img-rounded" alt="">
                         </a>
                     </div>
                     <div class="spacer-single"></div>
-                    <h3>Χωματουργικές εργασίες.</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <h3>Reformation and development of downgraded areas.</h3>
                 </div>
 
                 <div class="col-md-3">
                     <div class="picframe img-rounded">
-                        <a href="service-single-1.html">
+                        <a asp-controller="Home" asp-action="Service12">
                             <span class="overlay">
                                 <span class="pf_text">
                                     <span class="project-name">Our Project #1</span>
                                 </span>
                             </span>
-                            <img src="~/images/services/p12_a.jpg" class="img-responsive img-rounded" alt="">
+                            <img src="~/images/services/PruningWorks.jpg" class="img-responsive img-rounded" alt="">
                         </a>
                     </div>
                     <div class="spacer-single"></div>
-                    <h3>Κοστολογήσεις Έργων Πρασίνου.</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <h3>Shrubs and trees pruning works.</h3>
+                </div>
+                <div class="col-md-3">
+                    <div class="picframe img-rounded">
+                        <a asp-controller="Home" asp-action="Service13">
+                            <span class="overlay">
+                                <span class="pf_text">
+                                    <span class="project-name">Our Project #1</span>
+                                </span>
+                            </span>
+                            <img src="~/images/services/TurfMaintenance.jpg" class="img-responsive img-rounded" alt="">
+                        </a>
+                    </div>
+                    <div class="spacer-single"></div>
+                    <h3>Turf maintenance.</h3>
+                </div>
+                <div class="col-md-3">
+                    <div class="picframe img-rounded">
+                        <a asp-controller="Home" asp-action="Service14">
+                            <span class="overlay">
+                                <span class="pf_text">
+                                    <span class="project-name">Our Project #1</span>
+                                </span>
+                            </span>
+                            <img src="~/images/services/PhytosanitaryWorks.jpg" class="img-responsive img-rounded" alt="">
+                        </a>
+                    </div>
+                    <div class="spacer-single"></div>
+                    <h3>Phytosanitary works.</h3>
+                </div>
+                <div class="col-md-3">
+                    <div class="picframe img-rounded">
+                        <a asp-controller="Home" asp-action="Service15">
+                            <span class="overlay">
+                                <span class="pf_text">
+                                    <span class="project-name">Our Project #1</span>
+                                </span>
+                            </span>
+                            <img src="~/images/services/Composting.jpg" class="img-responsive img-rounded" alt="">
+                        </a>
+                    </div>
+                    <div class="spacer-single"></div>
+                    <h3>Collection and processing of non-hazardous waste - Composting.</h3>
+                </div>
+                <div class="col-md-3">
+                    <div class="picframe img-rounded">
+                        <a asp-controller="Home" asp-action="Service16">
+                            <span class="overlay">
+                                <span class="pf_text">
+                                    <span class="project-name">Our Project #1</span>
+                                </span>
+                            </span>
+                            <img src="~/images/services/LandClearance.jpg" class="img-responsive img-rounded" alt="">
+                        </a>
+                    </div>
+                    <div class="spacer-single"></div>
+                    <h3>land clearance - sweeping.</h3>
                 </div>
             </div>
-
         </div>
     </section>
-
-    <!-- section begin -->
-    <section id="cta" class="call-to-action text-light padding40 bg-color" aria-label="cta">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <h3 class="no-margin">Συμβουλευτείτε μας (είναι δωρεάν) και αφήστε μας να το κάνουμε!</h3>
-                </div>
-
-                <div class="col-md-4 text-right">
-                    <a asp-controller="Home" asp-action="Contact" class="btn btn-line btn-big">Καντε Αιτημα</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- logo carousel section close -->
 </div>

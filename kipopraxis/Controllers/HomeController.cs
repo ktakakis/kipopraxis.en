@@ -43,6 +43,71 @@ namespace kipopraxis.Controllers
             return View();
         }
 
+        public IActionResult Service1()
+        {
+            return View();
+        }
+        public IActionResult Service2()
+        {
+            return View();
+        }
+        public IActionResult Service3()
+        {
+            return View();
+        }
+        public IActionResult Service4()
+        {
+            return View();
+        }
+        public IActionResult Service5()
+        {
+            return View();
+        }
+        public IActionResult Service6()
+        {
+            return View();
+        }
+        public IActionResult Service7()
+        {
+            return View();
+        }
+        public IActionResult Service8()
+        {
+            return View();
+        }
+        public IActionResult Service9()
+        {
+            return View();
+        }
+        public IActionResult Service10()
+        {
+            return View();
+        }
+        public IActionResult Service11()
+        {
+            return View();
+        }
+        public IActionResult Service12()
+        {
+            return View();
+        }
+        public IActionResult Service13()
+        {
+            return View();
+        }
+        public IActionResult Service14()
+        {
+            return View();
+        }
+        public IActionResult Service15()
+        {
+            return View();
+        }
+        public IActionResult Service16()
+        {
+            return View();
+        }
+
         public IActionResult Projects()
         {
             return View();

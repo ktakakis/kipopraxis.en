@@ -2,18 +2,18 @@
     ViewData["Title"] = "Η Εταιρία μας";
 }
 <!-- subheader -->
-<section id="subheader" data-bgimage="url(../../images/background/subheader-5.jpg" class="style-2" data-stellar-background-ratio=".1">
+<section id="subheader" data-bgimage="url(../../images/background/subheader5.jpg" class="style-2" data-stellar-background-ratio=".1">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="title-wrap">
-                    <h1>Επικοινωνήστε μαζί μας</h1>
-                    <h4>Ελάτε σε επαφή μαζί μας</h4>
+                    <h1>Contact us</h1>
+                    <h4>Get in touch with us</h4>
                 </div>
                 <ul class="crumb">
-                    <li><a asp-controller="Home" asp-action="Index">Αρχική</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
                     <li class="sep">/</li>
-                    <li>Επικοινωνια</li>
+                    <li>Contact</li>
                 </ul>
             </div>
         </div>
@@ -26,40 +26,6 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="bg-color">
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="info-box padding20">
-                                <i class="icon_clock_alt"></i>
-                                <div class="info-box_text">
-                                    <div class="info-box_title">Ωρες λειτουργιας</div>
-                                    <div class="info-box_subtite">Δευτέρα - Παρασκευή: 09:00 - 18:00</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="info-box padding20">
-                                <i class="icon_house_alt"></i>
-                                <div class="info-box_text">
-                                    <div class="info-box_title">Η τοποθεσια μας</div>
-                                    <div class="info-box_subtite">Αγ. Παύλου 31, 121 32 - Περιστέρι</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="info-box padding20">
-                                <i class="icon_headphones"></i>
-                                <div class="info-box_text">
-                                    <div class="info-box_title">Εξυπηρετηση πελατων</div>
-                                    <div class="info-box_subtite">+30 210 57 75 176</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="clearfix"></div>
-                    </div>
                 </div>
 
             </div>
@@ -83,27 +49,27 @@
         <div class="row">
 
             <div class="col-md-8">
-                <h3>Στείλτε μας μήνυμα</h3>
+                <h3>Send us a message</h3>
                 <form name="contactForm" id='contact_form' method="post" action='email.php'>
                     <div class="row">
                         <div class="col-md-4">
-                            <div id='name_error' class='error'>Εισάγετε το όνομά σας.</div>
+                            <div id='name_error' class='error'>Enter your name.</div>
                             <div>
                                 <input type='text' name='name' id='name' class="form-control" placeholder="Το όνομά σας">
                             </div>
 
-                            <div id='email_error' class='error'>Εισάγετε ένα έγκυρο e-mail σας.</div>
+                            <div id='email_error' class='error'>Enter a valid email.</div>
                             <div>
                                 <input type='text' name='email' id='email' class="form-control" placeholder="Το E-mail σας">
                             </div>
 
-                            <div id='phone_error' class='error'>Εισαγάγετε τον αριθμό τηλεφώνου σας.</div>
+                            <div id='phone_error' class='error'>Enter your phone number.</div>
                             <div>
                                 <input type='text' name='phone' id='phone' class="form-control" placeholder="Το τηλεφωνό σας">
                             </div>
                         </div>
                         <div class="col-md-8">
-                            <div id='message_error' class='error'>Εισαγάγετε το μήνυμά σας.</div>
+                            <div id='message_error' class='error'>Enter your Message.</div>
                             <div>
                                 <textarea name='message' id='message' class="form-control" placeholder="Το μήνυμά σας"></textarea>
                             </div>
@@ -113,8 +79,8 @@
                             <p id='submit'>
                                 <input type='submit' id='send_message' value='Αποστολη μηνυματος' class="btn btn-line">
                             </p>
-                            <div id='mail_success' class='success'>Το μήνυμά σας έχει σταλεί με επιτυχία.</div>
-                            <div id='mail_fail' class='error'>Δυστυχώς, προέκυψε σφάλμα κατά την αποστολή του μηνύματός σας.</div>
+                            <div id='mail_success' class='success'>Your message has been sent successfully.</div>
+                            <div id='mail_fail' class='error'>Sorry, an error occurred while sending your message.</div>
                         </div>
                     </div>
                 </form>
@@ -123,14 +89,14 @@
             <div id="sidebar" class="col-md-4">
 
                 <div class="widget widget_text">
-                    <h3>Στοιχεία επικοινωνίας</h3>
+                    <h3>Contact info</h3>
                     <address>
-                        <span>Αγ. Παύλου 31, 121 32 - Περιστέρι</span>
-                        <span><strong>Τηλ:</strong> +30 210 5775 176</span>
+                        <span>31 Ag. Pavlou, 121 32 - Peristeri</span>
+                        <span><strong>Phone:</strong> +30 210 5775 176</span>
                         <span><strong>Fax:</strong> +30 210 5775 176</span>
                         <span><strong>Email:</strong><a href="mailto:info@kipopraxis.gr">info@kipopraxis.gr</a></span>
                         <span><strong>Web:</strong><a href="http://www.kipopraxis.gr">www.kipopraxis.gr</a></span>
-                        <span><strong>Ανοιχτά</strong>Δευτέρα - Παρασκευή 08:00 - 18:00</span>
+                        <span><strong>Open: </strong>Monday - Sunday 08:00 - 18:00</span>
                     </address>
                 </div>
             </div>

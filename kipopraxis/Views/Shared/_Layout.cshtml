@@ -2,7 +2,7 @@
 <html lang="el">
 <head>
     <meta charset="utf-8">
-    <title>Κηποπράξις - Ιστοσελίδα</title>
+    <title>Kipopraxis - Web page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -45,27 +45,11 @@
 </head>
 
 <body id="homepage">
+    <!-- ======= Top Bar ======= -->
     <div id="wrapper">
         <!-- header begin -->
         <header>
-            <div class="info">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="col">Ώρες εργασίας Δευτέρα - Παρασκευή <span class="id-color"><strong>08:00-16:00</strong></span></div>
-                            <!-- social icons -->
-                            <div class="col social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-rss"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-envelope-o"></i></a>
-                            </div>
-                            <!-- social icons close -->
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!---->
 
             <div class="container">
                 <div class="row">
@@ -82,18 +66,43 @@
                         <!-- small button close -->
                         <!-- mainmenu begin -->
                         <nav>
+                            
                             <ul id="mainmenu">
-                                <li><a asp-controller="Home" asp-action="Index">Αρχικη</a></li>
-                                <li><a asp-controller="Home" asp-action="About">Η Εταιρεια μας</a></li>
-                                <li><a asp-controller="Home" asp-action="Services">Υπηρεσιες</a></li>
-                                <li><a asp-controller="Home" asp-action="Projects">Εργα</a></li>
-                                <li><a asp-controller="Home" asp-action="News">Νεα</a></li>
-                                <li><a asp-controller="Home" asp-action="Contact">Επικοινωνια</a></li>
+                                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li><a asp-controller="Home" asp-action="About">Profil</a></li>
+                                <li>
+                                    <a asp-controller="Home" asp-action="Services">Services</a>
+                                    <ul>
+                                        <li><a asp-controller="Home" asp-action="Service1">Earthworks.</a></li>
+                                        <li><a asp-controller="Home" asp-action="Service2">Irrigation networks construction</a></li>
+                                        <li><a asp-controller="Home" asp-action="Service3">Green roofs.</a></li>
+                                        <li><a asp-controller="Home" asp-action="Service4">Garden lighting.</a></li>
+                                        <li><a asp-controller="Home" asp-action="Service5">Ceramic floors.</a></li>
+                                        <li><a asp-controller="Home" asp-action="Service6">Floor construction.</a></li>
+                                        <li><a asp-controller="Home" asp-action="Service7">Shrubs and trees planting</a></li>
+                                        <li><a asp-controller="Home" asp-action="Service8">Sports fields construction</a></li>
+                                        <li><a asp-controller="Home" asp-action="Service9">Vertical gardens.</a></li>
+                                        <li><a asp-controller="Home" asp-action="Service10">Irrigation networks maintenance.</a></li>
+                                        <li><a asp-controller="Home" asp-action="Service11">Reformation downgraded areas.</a></li>
+                                        <li><a asp-controller="Home" asp-action="Service12">Pruning works.</a></li>
+                                        <li><a asp-controller="Home" asp-action="Service13">Turf maintenance.</a></li>
+                                        <li><a asp-controller="Home" asp-action="Service14">Phytosanitary works.</a></li>
+                                        <li><a asp-controller="Home" asp-action="Service15">Processing of non-hazardous waste</a></li>
+                                        <li><a asp-controller="Home" asp-action="Service16">land clearance - sweeping.</a></li>
+                                    </ul>
+                                </li>
+                                <li><a asp-controller="Home" asp-action="Projects">Projects</a></li>
+                                <li><a asp-controller="Home" asp-action="News">News</a></li>
+                                <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                                <li>
+                                    <a href="https://www.kipopraxis.gr" class="language" rel="it-IT"><img src="~/images/Flags/GR.png" /> Ελληνικά</a>
+                                    <ul>
+                                        <li><a href="https://en.kipopraxis.gr" class="language" rel="it-IT"><img src="~/images/Flags/UK.png" /> English</a></li>                                        
+                                    </ul>
+                                </li>
                             </ul>
                         </nav>
-
                     </div>
-
                 </div>
             </div>
         </header>
@@ -102,24 +111,47 @@
         @RenderBody()
         <!-- footer begin -->
         <footer>
-            <div class="container pb40">
+            <div class="container pb40 ">
                 <div class="row">
+                    <table class="center" style="width:100%" >
+                        <tr>
+                            <td><a target="_blank" href="~/images/ISO/CERT_KHPOPRAXIS_9001_2020.pdf"/><img src="~/images/ISO/ISO_LOGO_BLACK.png" /></td>
+                            <td><a target="_blank" href="~/images/ISO/CERT_KHPOPRAXIS_39001_2020.pdf" /><img src="~/images/ISO/ISO_LOGO_BLACK.png" /></td>
+                            <td><a target="_blank" href="~/images/ISO/CERT_KHPOPRAXIS_14001_2020.pdf" /><img src="~/images/ISO/ISO_LOGO_BLACK.png" /></td>
+                            <td><a target="_blank" href="~/images/ISO/CERT_KHPOPRAXIS_45001_2020.pdf" /><img src="~/images/ISO/ISO_LOGO_BLACK.png" /></td>
+                            <td><a target="_blank" href="~/images/ISO/CERT_KHPOPRAXIS_50001_2020.pdf" /><img src="~/images/ISO/ISO_LOGO_BLACK.png" /></td>
+                            <td><a target="_blank" href="~/images/ISO/CERT_KIPOPRAXIS_27001_2020.pdf" /><img src="~/images/ISO/ISO_LOGO_BLACK.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>EN ISO 9001:2015</td>
+                            <td>EN ISO 39001:2018</td>
+                            <td>EN ISO 14001:2015</td>
+                            <td>ISO 45001:2018</td>
+                            <td>EN ISO 50001:2018</td>
+                            <td>ΕΝ ISO 27001:2013</td>
+                        </tr>
+                        <tr>
+                            <td>No.: 20001200003212</td>
+                            <td>No.: 20002200003216</td>
+                            <td>No.: 20051200003214</td>
+                            <td>No.: 2015200003215</td>
+                            <td>No.: 20000200003217</td>
+                            <td>No.: 20201200003550</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row pt-5">
                     <div class="col-md-3">
                         <img src="~/images/logo-2.png" class="logo-small" alt=""><br>
                     </div>
 
                     <div class="col-md-6">
-                        &copy; Copyright 2020 - Ιστοσελίδα Κηποπράξις. Υποστηρίζεται από την <span class="id-color">TechoLab</span>
+                        <span><strong>Address: </strong>31 Ag. Pavlou, 121 32 - Peristeri</span><br /><span><strong>Phone:</strong> +30 210 5775 176 </span><strong></strong><span><strong>Email:</strong><a href="mailto:info@kipopraxis.gr"> info@kipopraxis.gr</a></span>
                     </div>
 
                     <div class="col-md-3 text-right">
                         <div class="social-icons">
-                            <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                            <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                            <a href="#"><i class="fa fa-rss fa-lg"></i></a>
-                            <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                            <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                            <a href="#"><i class="fa fa-dribbble fa-lg"></i></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -152,6 +184,7 @@
     <script src="~/js/designesia.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ_aEnH_SDIRQHCFOGPX4xwjPw7VaDLXk"></script>
     <script src="~/js/map-4.js"></script>
+
 
     <!-- SLIDER REVOLUTION SCRIPTS  -->
     <script type="text/javascript" src="~/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
