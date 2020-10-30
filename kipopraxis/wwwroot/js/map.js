@@ -8,7 +8,7 @@
 
                         var mapOptions = {
                             // How zoomed in you want the map to start at (always required)
-                            zoom: 15,
+                            zoom: 20,
                             disableDefaultUI: true,
 							scrollwheel: false, 
 
@@ -32,7 +32,7 @@
                             position: myLatlng,
                             map: map,
 							icon: 'images/map-marker.png',
-                            title: 'Lorem Ipsum'
+                            title: 'Kipopraxis'
                         });
 						
 						

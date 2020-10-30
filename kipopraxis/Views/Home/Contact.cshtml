@@ -1,8 +1,9 @@
-﻿@{
+﻿@model kipopraxis.Models.ContactViewModel
+@{
     ViewData["Title"] = "Η Εταιρία μας";
 }
 <!-- subheader -->
-<section id="subheader" data-bgimage="url(../../images/background/subheader5.jpg" class="style-2" data-stellar-background-ratio=".1">
+<section id="subheader" data-bgimage="url(../../images/background/subheader-5.jpg" class="style-2" data-stellar-background-ratio=".1">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -47,56 +48,61 @@
 
     <div class="container">
         <div class="row">
-
             <div class="col-md-8">
                 <h3>Send us a message</h3>
-                <form name="contactForm" id='contact_form' method="post" action='email.php'>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div id='name_error' class='error'>Enter your name.</div>
-                            <div>
-                                <input type='text' name='name' id='name' class="form-control" placeholder="Το όνομά σας">
-                            </div>
-
-                            <div id='email_error' class='error'>Enter a valid email.</div>
-                            <div>
-                                <input type='text' name='email' id='email' class="form-control" placeholder="Το E-mail σας">
-                            </div>
-
-                            <div id='phone_error' class='error'>Enter your phone number.</div>
-                            <div>
-                                <input type='text' name='phone' id='phone' class="form-control" placeholder="Το τηλεφωνό σας">
+                <div class="has-error" col-md-12>
+                    <form method="post">
+                        <div class="row">
+                            <div class="form-group col-md-8">
+                                <label asp-for="Name">Name:</label>
+                                <input asp-for="Name" class="form-control" />
+                                <span asp-validation-for="Name" class="text-muted"></span>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <div id='message_error' class='error'>Enter your Message.</div>
-                            <div>
-                                <textarea name='message' id='message' class="form-control" placeholder="Το μήνυμά σας"></textarea>
+                        <div class="row">
+                            <div class="form-group col-md-8">
+                                <label asp-for="Email">Email:</label>
+                                <input asp-for="Email" class="form-control" />
+                                <span asp-validation-for="Email" class="text-muted"></span>
                             </div>
                         </div>
-
-                        <div class="col-md-12">
-                            <p id='submit'>
-                                <input type='submit' id='send_message' value='Αποστολη μηνυματος' class="btn btn-line">
-                            </p>
-                            <div id='mail_success' class='success'>Your message has been sent successfully.</div>
-                            <div id='mail_fail' class='error'>Sorry, an error occurred while sending your message.</div>
+                        <div class="row">
+                            <div class="form-group col-md-8">
+                                <label asp-for="PhoneNumber">Phone:</label>
+                                <input asp-for="PhoneNumber" class="form-control" />
+                                <span asp-validation-for="PhoneNumber" class="text-muted"></span>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                        <div class="row">
+                            <div class="form-group col-md-8">
+                                <label asp-for="Subject">Subject:</label>
+                                <input asp-for="Subject" class="form-control" />
+                                <span asp-validation-for="Subject" class="text-muted"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-8">
+                                <label asp-for="Message">Message:</label>
+                                <textarea rows="8" cols="20" asp-for="Message" class="form-control"></textarea>
+                                <span asp-validation-for="Message" class="text-muted"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-success">Send Message</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-
             <div id="sidebar" class="col-md-4">
-
                 <div class="widget widget_text">
                     <h3>Contact info</h3>
                     <address>
-                        <span>31 Ag. Pavlou, 121 32 - Peristeri</span>
+                        <span>31, Agiou Pavlou 121 32 - Peristeri</span>
                         <span><strong>Phone:</strong> +30 210 5775 176</span>
                         <span><strong>Fax:</strong> +30 210 5775 176</span>
                         <span><strong>Email:</strong><a href="mailto:info@kipopraxis.gr">info@kipopraxis.gr</a></span>
                         <span><strong>Web:</strong><a href="http://www.kipopraxis.gr">www.kipopraxis.gr</a></span>
-                        <span><strong>Open: </strong>Monday - Sunday 08:00 - 18:00</span>
+                        <span><strong>Open</strong>Monday - Friday 08:00 - 18:00</span>
                     </address>
                 </div>
             </div>

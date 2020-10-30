@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MailKit.Net.Smtp;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using kipopraxis.Models;
+using MimeKit;
+using MimeKit.Text;
+using System;
 
 namespace kipopraxis.Controllers
 {
@@ -16,6 +16,44 @@ namespace kipopraxis.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+        }
+        [HttpPost]
+        public IActionResult Contact(ContactViewModel contactViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    //instantiate a new MimeMessage
+                    var message = new MimeMessage();
+                    //Setting the To e-mail address
+                    message.To.Add(new MailboxAddress("Kipopraxis Info", "info@kipopraxis.gr"));
+                    //Setting the From e-mail address
+                    message.From.Add(new MailboxAddress("Ιστοσελίδα kipopraxis.gr", "kipopraxis.gr@gmail.com"));
+                    //E-mail subject 
+                    message.Subject = contactViewModel.Subject;
+                    //E-mail message body
+                    message.Body = new TextPart(TextFormat.Html)
+                    {
+                        Text = contactViewModel.Message + "<br /><br />Το μήνυμα εστάλη από: " + contactViewModel.Name + "<br />E-mail: " + contactViewModel.Email + "<br />Τηλέφωνο: " + contactViewModel.PhoneNumber
+                    };
+
+                    //Configure the e-mail
+                    using (var emailClient = new SmtpClient())
+                    {
+                        emailClient.Connect("smtp.gmail.com", 587, false);
+                        emailClient.Authenticate("kipopraxis.gr@gmail.com", "Kipopraxis123!@#");
+                        emailClient.Send(message);
+                        emailClient.Disconnect(true);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    ModelState.Clear();
+                    ViewBag.Message = $" Ουπς! Κάποιο πρόβλημα υπάρχει εδώ! {ex.Message}";
+                }
+            }
+            return View();
         }
 
         public IActionResult Index()

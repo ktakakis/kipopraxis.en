@@ -47,7 +47,7 @@
 		 */
 		options: {
 			mapTypeId: 'roadmap',
-			zoom: 5	
+			zoom: 6	
 		},
 		
 		/**
